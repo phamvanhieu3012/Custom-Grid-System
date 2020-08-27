@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo thư viện Grid</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: papayawhip;
+            margin: 0;
+            line-height: 260px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .course-item {
+            background-color: deeppink;
+        }
+
+        @media screen and (max-width: 1023px) {
+            .course-item {
+                margin-top: 16px;
+            }
+        }
+
+        .category {
+            background-color: green;
+            height: 260px;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<!-- Column: .col
+    Prefix class:
+    - c- mobile
+    - m - tablet
+    - l -  PC
+ -->
+
+<body>
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>Javascipt</li>
+                        <li>HTML</li>
+                        <li>MySql</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 2</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
